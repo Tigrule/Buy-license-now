@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>buy now</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<form action="">
+    <div class="form-wrap">
+        <div class="content-wrap">
+            <div class="radio-wrap" onclick="selectPlan(0)">
+                <div class="radio">
+                    <input type="radio" name="plan" id="plan1" value="plan1">
+                    <label for="plan1">License Plan #1</label>
+                </div>
+                <div class="price">$13 per license</div>
+            </div>
+            <div class="radio-wrap" onclick="selectPlan(1)">
+                <div class="radio">
+                    <input type="radio" name="plan" id="plan2" value="plan2">
+                    <label for="plan2">License Plan #2</label>
+                </div>
+                <div class="price">$22 per license</div>
+            </div>
+            <div class="radio-wrap" onclick="selectPlan(2)">
+                <div class="radio">
+                    <input type="radio" name="plan" id="plan3" value="plan3" checked>
+                    <label for="plan3">License Plan #3</label>
+                </div>
+                <div class="price">$34 per license</div>
+            </div>
+            <hr>
+            <div class="select center">
+                <label for="number_of_licenses">Number of licenses: </label>
+                <select name="number" id="number_of_licenses" onclick="select()">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            <hr>
+            <div class="total center">
+                TOTAL: <span id="total-price"></span><sup class="up-font"></sup>
+            </div>
+            <div class="total-selected"></div>
+            <div class="button center">
+                <input type="submit" value="BUY NOW">
+            </div>
+            <div id="selected-plan" class="center"></div>
+        </div>
+    </div>
+</form>
+
+<script src="js/script.js">
+
+</script>
+</body>
+</html>
